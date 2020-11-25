@@ -15,8 +15,8 @@ pinMode(11, OUTPUT);
 pinMode(ledkuning, OUTPUT);
 pinMode(ledbiru, OUTPUT);
 pinMode(ledmerah, OUTPUT);
-Serial.begin(9600);
 }
+
 void loop() {
 int sensorValue1 = digitalRead(button1);
 int sensorValue2 = digitalRead(button2);
@@ -133,8 +133,5 @@ switch(kondisi){
     digitalWrite(11, LOW);
     
   break;
-
-
 }
-Serial.println(kondisi);
 }
